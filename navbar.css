@@ -1,0 +1,63 @@
+/* General navbar styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+    background-color: black; /* Light background color */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+}
+
+/* Logo styling */
+.navbar-logo {
+    height: 100px; /* Adjust the size as needed */
+    transition: transform 0.3s ease;
+}
+ 
+.navbar-logo:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Title and slogan styling */
+.navbar-title, .navbar-slogan {
+    margin: 0;
+    color: white; /* Dark color for text */
+}
+
+.navbar-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar-slogan {
+    font-size: 1em;
+    opacity: 0.7;
+}
+
+/* Sign in button styling */
+.signin-button {
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color:white; /* Primary button color */
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signin-button:hover {
+    background-color: white; /* Darker shade on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signin-button {
+        margin-top: 10px;
+    }
+}
